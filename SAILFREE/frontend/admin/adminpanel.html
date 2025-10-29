@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - SAILFREE</title>
+    <link rel="stylesheet" href="admin_style.css">
+</head>
+<body>
+
+    <div class="admin-container">
+        <h2>Admin Panel</h2>
+        <button onclick="logout()">Logout</button>
+        
+        <table>
+            <h2>Admin Dashboard</h2>
+            <p>Total Users: <span id="total-users"></span></p>
+            <p>Total Projects: <span id="total-projects"></span></p>
+        </table>
+
+        <h3>Users</h3>
+        <table id="users-table">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+        </table>
+        
+        <h3>Projects</h3>
+        <table id="projects-table">
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Budget</th>
+                <th>Deadline</th>
+                <th>Action</th>
+            </tr>
+        </table>
+
+        <h2>Project Bids</h2>
+        <table id="bids-table" border="1">
+            <tr>
+                <th>ID</th>
+                <th>Bidder</th>
+                <th>Project</th>
+                <th>Bid Amount</th>
+                <th>Message</th>
+                <th>Time</th>
+            </tr>
+        </table>
+
+    </div>
+    
+    <script src="admin_script.js"></script>
+    <p id="admin-message"></p> <!-- Success message appears here -->
+    <script src="admin.js"></script>
+</body>
+</html>
